@@ -2,9 +2,9 @@
 
 See RAWDATA 2017 Assignment 4.pdf
 
-Collaborators:
-Hakan Türkmenoğlu 
+Collaborators:  
+Hakan Türkmenoğlu  
 Eneko Ortiz De Zarate  
-Simon Bouvier
+Simon Bouvier  
 Ali Sabbagh  
 Maxime Parriaux  
