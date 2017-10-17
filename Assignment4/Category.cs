@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Assignment4
 {
-    class Category
+    public class Category
     {
-        [Column("categoryid")]
+        [Column("CategoryId")]
         public int Id { get; set; }
-        [Column("categoryname")]
+        [Column("CategoryName")]
         public string Name { get; set; }
         public string Description { get; set; }
     }

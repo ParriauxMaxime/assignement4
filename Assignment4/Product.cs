@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Assignment4
 {
-    class Product
+    public class Product
     {
-        [Column("productid")]
+        [Column("ProductId")]
         public int Id { get; set; }
-        [Column("productname")]
+        [Column("ProductName")]
         public string Name { get; set; }
         public double UnitPrice { get; set; }
-        [Column("quantityunit")]
+        [Column("QuantityUnit")]
         public string QuantityPerUnit { get; set; }
         public int UnitsInStock { get; set; }
 
