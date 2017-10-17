@@ -1,9 +1,9 @@
-# Assignement4
+# Assignment4
 
-See RAWDATA 2017 Assignement 4.pdf
+See RAWDATA 2017 Assignment 4.pdf
 
 Collaborator :
-Hakan (please add your name bro)  
+Hakan Türkmenoğlu 
 Eneko Ortiz De Zarate  
 Simon Bouvier  
 Ali Sabbagh  
