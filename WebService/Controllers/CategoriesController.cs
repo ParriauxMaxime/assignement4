@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Assignment4;
+using Assignment4.PartII;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebService.Controllers
@@ -29,6 +29,34 @@ namespace WebService.Controllers
             if (category == null) return NotFound();
 
             return Ok( category );
+        }
+        
+        [HttpPost]
+        public IActionResult PostCategory([FromBody] Category category)
+        {
+            var cat = _dataService.CreateCategory(category.Name, category.Description);
+
+            return Created("", cat); // FIXME: what is uri in this case?
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult PutCategory(int id, [FromBody] Category category)
+        {
+            bool found = _dataService.UpdateCategory(id, category.Name, category.Description);
+
+            if (!found) return NotFound();
+
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCategory(int id)
+        {
+            bool found = _dataService.DeleteCategory(id);
+
+            if (!found) return NotFound();
+
+            return Ok();
         }
     }
 }
