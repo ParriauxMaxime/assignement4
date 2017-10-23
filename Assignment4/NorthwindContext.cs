@@ -16,7 +16,7 @@ namespace Assignment4
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseMySql(
-                "server=localhost;database=northwind;uid=eneko;pwd=rawdata"); //
+                "server=localhost;database=northwind;uid=root;pwd=rawdata"); //
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
